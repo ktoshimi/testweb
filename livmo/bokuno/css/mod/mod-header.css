@@ -7,16 +7,21 @@
     margin-top: -82px;
     z-index: 100;
 }
+.mod-header .nuv {
+	width: 1024px;
+    margin: 0 auto;
+    clear: both;
+}
+.mod-header .logowrap {
+	float: left;
+}
 .mod-header .headerLogo {
     height: 40px;
     margin: 20px 40px;
 }
 .mod-header .wrap {
-    position: absolute;
-    top: 0;
-    right: 60px;
-    display: inline-table;
-    margin: 16px 0;
+    float: right;
+    margin-top: 15px;
 }
 .mod-header .navigationList {
     display: table-cell;
@@ -48,15 +53,14 @@
     height: 50px;
     width: 165px;
     color: #664733;
-    border: 1px solid #664733;
-    background-color: #664733;
-    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #000;
     color: white;
     text-decoration: none;
     text-align: center;
 }
 .mod-header .reservation:hover {
-    background-color: #000;
+    background-color: #664733;
     color: #fff;
 }
 
