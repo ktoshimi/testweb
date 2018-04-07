@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.mod-catch {
+    background-color: #664733;
+    margin-top: 80px;
+}
+.mod-catch .catchCont {
+    width: 1300px;
+    height: 650px;
+    margin: 0 auto;
+    background: url(./../../image/header_img.png) no-repeat;
+    background-position: 50% 50%;
+    background-size: 1400px;
+    position: relative;
+}
+.mod-catch .catchCont:before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(right, rgba(164, 64, 16, 0) 85%, #664733 100%);
+    background: linear-gradient(right, rgba(164, 64, 16, 0) 90%, #664733 100%);
+}
+.mod-catch .catchCont:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(164, 64, 16, 0) 85%, #664733 100%);
+    background: linear-gradient(left, rgba(164, 64, 16, 0) 90%, #664733 100%);
+}
+.mod-catch .catchCont .storeCont {
+    margin-left: 170px;
+    max-width: 250px;
+}
+.mod-catch .catchCont .storeCont .harryLogo {
+    margin-top: 60px;
+    width: 250px;
+}
+.mod-catch .catchCont .storeCont .storeName {
+    margin: 20px 0;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:1300px) {
+    .mod-catch .catchCont {
+        width: 100%;
+        background-position: 20% 0;
+    }
+    .mod-catch .catchCont .storeCont {
+        margin-left: 40px;
+    }
+    .mod-catch .catchCont:before,
+    .mod-catch .catchCont:after {
+        background: none;
+    }
+}

@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.mod-about {
+    background-color: #d1dae0;
+    padding: 72px 0;
+}
+.mod-about h2 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.mod-about h2 span{
+    display: block;
+    font-size: 18px;
+}
+.mod-about .aboutText {
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.7;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.mod-about .aboutText span {
+    margin-top: 20px;
+    display:block;
+    font-size: 15px;
+}
+.mod-about .outline {
+}
+.mod-about .outline .outlineCont {
+margin: 0 auto;
+width: 700px;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+.mod-about .outline .outlineCont img{
+  width: 350px;
+}
+.mod-about .outline .outlineCont .rightCont {
+  float: right;
+  width: 335px;
+  margin: 0 0 0 15px;
+  border-top: 2px solid #000;
+  line-height: 1.5;
+}
+.mod-about .outline .outlineCont .rightCont h3 {
+font-size: 20px;
+padding-bottom: 10px;
+}
+.mod-about .outline .outlineCont .rightCont .more {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    width: 165px;
+    color: #664733;
+    border: 1px solid #664733;
+    background-color: #664733;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.mod-about .outline .outlineCont .rightCont .more:hover {
+    background-color: #000;
+    color: #fff;
+}
+.mod-about .outline .outlineCont .rightCont .button {
+    padding-top: 10px;
+    float: right;
+}
+
+.mod-about .outline .outlineCont.type2 {
+}
+.mod-about .outline .outlineCont.type2 img{
+  float: right;
+}
+.mod-about .outline .outlineCont.type2 .rightCont {
+  margin: 0 15px 0 0;
+}

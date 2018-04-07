@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('./mod/mod-header.css');
+@import url('./mod/mod-catch.css');
+@import url('./mod/mod-about.css');
+@import url('./mod/mod-photos.css');
+@import url('./mod/mod-footer.css');
+@import url('./mod/mod-copyright.css');
+
+html, body {
+    font-family: Realtime-Regular, Realtime, "Realtime", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif; 'Roboto', "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif;
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+.mod-footer {
+    background-color: #333;
+}
+.mod-footer .footerCont {
+    width: 1000px;
+    margin: 0 auto;
+    display: table;
+    color: #fff;
+}
+.mod-footer .footerCont .registCont,
+.mod-footer .footerCont .mainCont {
+    display: table-cell;
+    vertical-align: top;
+    padding: 60px 0;
+}
+.mod-footer .footerCont .registCont {
+    width: 250px;
+    text-align: center;
+}
+.mod-footer .footerCont .registCont .harryLogo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+.mod-footer .footerCont .registCont .regist {
+    color: #fff;
+    font-size: 75%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.mod-footer .footerCont .mainCont {
+    padding-left: 40px;
+}
+.mod-footer .footerCont .mainCont .navigationList {
+    display: table;
+    vertical-align: middle;
+}
+.mod-footer .footerCont .mainCont .navigationListItem {
+    display: table-cell;
+    padding-right: 30px;
+}
+.mod-footer .footerCont .mainCont .navigationListItem a {
+    text-decoration: none;
+    color: #fff;
+}
+.mod-footer .footerCont .mainCont .navigationListItem a:hover {
+    color: #e15854;
+}
+.mod-footer .footerCont .mainCont .storeName {
+    margin-top: 40px;
+    font-size: 113%;
+    font-weight: bold;
+}
+.mod-footer .footerCont .mainCont .access,
+.mod-footer .footerCont .mainCont .tel {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.mod-footer .footerCont .mainCont .tel {
+    margin-bottom: 30px;
+}
+.mod-footer .footerCont .mainCont .fbLogo,
+.mod-footer .footerCont .mainCont .twitterLogo {
+    width: 40px;
+}
+.mod-footer .footerCont .mainCont .twitterLogo {
+    margin-left: 20px;
+}
+.mod-footer .footerCont .mainCont .fbLogo:hover,
+.mod-footer .footerCont .mainCont .twitterLogo:hover {
+    opacity: 0.6;
+}

@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.mod-copyright {
+    padding: 40px 0 80px;
+}
+.mod-copyright .copyrightText {
+    color: #a5a5a5;
+    text-align: center;
+    line-height: 1.2;
+}

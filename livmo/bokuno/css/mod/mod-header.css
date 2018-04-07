@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+.mod-header {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: -82px;
+    z-index: 100;
+}
+.mod-header .headerLogo {
+    height: 40px;
+    margin: 20px 40px;
+}
+.mod-header .wrap {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    display: inline-table;
+    margin: 16px 0;
+}
+.mod-header .navigationList {
+    display: table-cell;
+    vertical-align: middle;
+}
+.mod-header .navigationListItem {
+    display: table-cell;
+    padding-right: 40px;
+}
+.mod-header .navigationListItem a {
+    text-decoration: none;
+    color: #000;
+}
+.mod-header .navigationListItem.active a {
+    color: #664733;
+}
+.mod-header .navigationListItem a:hover {
+    color: #664733;
+    font-weight: bold;
+}
+.mod-header .navigationListItem a:active {
+    font-weight: normal;
+    border-bottom: 2px solid #664733;
+    padding-bottom: 8px;
+}
+.mod-header .reservation {
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    width: 165px;
+    color: #664733;
+    border: 1px solid #664733;
+    background-color: #664733;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.mod-header .reservation:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width:1300px) {
+    .mod-header .wrap {
+        right: 40px;
+    }
+}

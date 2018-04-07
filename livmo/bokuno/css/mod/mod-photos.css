@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.mod-photos {
+    width: 900px;
+    margin: 0 auto;
+    /*text-align: center;*/
+    padding: 70px 0;
+}
