@@ -5,8 +5,10 @@
 <head>
     <title>BOKUNO Cafe & hotel - official site -</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link href="./css/reset.css" rel="stylesheet" type="text/css">
     <link href="./css/layout.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./js/naver/jquery.fs.naver.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 
 </head>
@@ -21,8 +23,8 @@
                 <li class="navigationListItem active"><a href="#">宿泊案内</a></li>
                 <li class="navigationListItem"><a href="#">イベント利用案内</a></li>
                 <li class="navigationListItem"><a href="#">アクセス</a></li>
+                <li class="navigationListItem"><a href="#" class="reservation">予約する</a></li>
             </ul>
-            <a href="#" class="reservation">予約する</a>
         </div>
      </div>
     </header>
@@ -127,4 +129,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/swiper_main.js"></script>
+    <script type="text/javascript" src="./js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/naver/jquery.fs.naver.js"></script>
+    <script type="text/javascript">
+$(function() {
+    $("#navre").naver();
+});
+</script>
 </body>

@@ -1,23 +1,88 @@
 @charset "utf-8";
 
+@media screen and (max-width:768px) { 
+.mod-header {
+    height: 140px;
+}
+.mod-header .headerLogo {
+    height: 100px;
+    margin: 30px 40px;
+}
+}
 .mod-header {
     width: 100%;
+    height: 50px;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.8);
-    margin-top: -82px;
+    margin-top: -52px;
     z-index: 100;
 }
 .mod-header .nuv {
 	width: 1024px;
-    margin: 0 auto;
-    clear: both;
+margin: 0 auto;
+}
+.mod-header .headerLogo {
+    height: 30px;
+position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.mod-header .wrap {
+    float: right;
+}
+.mod-header .navigationList {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -0.5em;
+}
+.mod-header .navigationListItem {
+    display: table-cell;
+    padding-right: 40px;
+}
+.mod-header .navigationListItem a {
+    text-decoration: none;
+    color: #000;
+}
+.mod-header .navigationListItem.active a {
+    color: #664733;
+}
+.mod-header .navigationListItem a:hover {
+    color: #664733;
+    font-weight: bold;
+}
+.mod-header .navigationListItem a:active {
+    font-weight: normal;
+    border-bottom: 2px solid #664733;
+    padding-bottom: 8px;
+}
+/*.mod-header .reservation {
+    display: table-cell;
+    vertical-align: middle;
+    height: 30px;
+    width: 165px;
+    color: #664733;
+    border: 1px solid #000;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.mod-header .reservation:hover {
+    background-color: #664733;
+    color: #fff;
+}*/
+/*
+.mod-header .nuv {
 }
 .mod-header .logowrap {
 	float: left;
 }
 .mod-header .headerLogo {
-    height: 40px;
-    margin: 20px 40px;
+    height: 80px;
+    margin: 30px 40px;
 }
 .mod-header .wrap {
     float: right;
@@ -63,9 +128,4 @@
     background-color: #664733;
     color: #fff;
 }
-
-@media screen and (max-width:1300px) {
-    .mod-header .wrap {
-        right: 40px;
-    }
-}
+*/
