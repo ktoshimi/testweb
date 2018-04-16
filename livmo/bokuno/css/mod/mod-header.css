@@ -1,14 +1,6 @@
 @charset "utf-8";
 
-@media screen and (max-width:768px) { 
-.mod-header {
-    height: 140px;
-}
-.mod-header .headerLogo {
-    height: 100px;
-    margin: 30px 40px;
-}
-}
+/* PC */
 .mod-header {
     width: 100%;
     height: 50px;
@@ -17,30 +9,28 @@
     margin-top: -52px;
     z-index: 100;
 }
-.mod-header .nuv {
-	width: 1024px;
-margin: 0 auto;
-}
 .mod-header .headerLogo {
+    margin-top: -12px;
+    position: absolute;
+    top: 50%;
     height: 30px;
-position: absolute;
-  top: 50%;
-  margin-top: -15px;
-}
-.mod-header .wrap {
-    float: right;
+    padding-left: 20px;
 }
 .mod-header .navigationList {
-    display: table-cell;
-    vertical-align: middle;
     position: absolute;
     right: 0;
     top: 50%;
-    margin-top: -0.5em;
+    margin-top: -0.4em;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
 }
 .mod-header .navigationListItem {
     display: table-cell;
     padding-right: 40px;
+}
+.mod-header .navigationListItem:last-child {
+    padding-right: 0;
 }
 .mod-header .navigationListItem a {
     text-decoration: none;
@@ -58,43 +48,41 @@ position: absolute;
     border-bottom: 2px solid #664733;
     padding-bottom: 8px;
 }
-/*.mod-header .reservation {
-    display: table-cell;
-    vertical-align: middle;
-    height: 30px;
-    width: 165px;
-    color: #664733;
-    border: 1px solid #000;
-    background-color: #000;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-.mod-header .reservation:hover {
-    background-color: #664733;
-    color: #fff;
-}*/
-/*
-.mod-header .nuv {
-}
-.mod-header .logowrap {
-	float: left;
+
+/* SP */
+@media screen and (max-width:768px) { 
+.mod-header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: -102px;
+    z-index: 100;
 }
 .mod-header .headerLogo {
-    height: 80px;
-    margin: 30px 40px;
-}
-.mod-header .wrap {
-    float: right;
-    margin-top: 15px;
+    margin-top: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    margin-left: -71px;
+    padding-left: 0;
 }
 .mod-header .navigationList {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -0.4em;
     display: table-cell;
     vertical-align: middle;
+    padding-right: 20px;
 }
 .mod-header .navigationListItem {
     display: table-cell;
     padding-right: 40px;
+}
+.mod-header .navigationListItem:last-child {
+    padding-right: 0;
 }
 .mod-header .navigationListItem a {
     text-decoration: none;
@@ -112,20 +100,86 @@ position: absolute;
     border-bottom: 2px solid #664733;
     padding-bottom: 8px;
 }
-.mod-header .reservation {
-    display: table-cell;
-    vertical-align: middle;
-    height: 50px;
-    width: 165px;
-    color: #664733;
-    border: 1px solid #000;
-    background-color: #000;
-    color: white;
-    text-decoration: none;
-    text-align: center;
+
+#nav-drawer {
+  position: absolute;
+  top: 50%;
+  margin-top: 16px;
+
+  left: 10px;
+  
 }
-.mod-header .reservation:hover {
-    background-color: #664733;
-    color: #fff;
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
 }
-*/
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+}

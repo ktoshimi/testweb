@@ -10,23 +10,27 @@
     <link href="./css/layout.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="./js/naver/jquery.fs.naver.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-
 </head>
 
 <body>
 
     <header class="mod-header">
       <div class="nuv">  
-        <a href="#" class="logowrap"><img src="./image/headlogo.png" class="headerLogo" alt="ハリネズミ専門店 HARRY"></a>
-        <div class="wrap">
-            <ul class="navigationList">
-                <li class="navigationListItem active"><a href="#">宿泊案内</a></li>
-                <li class="navigationListItem"><a href="#">イベント利用案内</a></li>
-                <li class="navigationListItem"><a href="#">アクセス</a></li>
-                <li class="navigationListItem"><a href="#" class="reservation">予約する</a></li>
-            </ul>
+        <a href="#" class="logowrap"><img src="./image/headlogo.png" class="headerLogo" alt="BOKUNO Cafe & Hotel"></a>
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+	            <ul class="navigationList">
+                    <li class="navigationListItem active"><a href="#">宿泊案内</a></li>
+                    <li class="navigationListItem"><a href="#">イベント利用案内</a></li>
+                    <li class="navigationListItem"><a href="#">アクセス</a></li>
+                    <li class="navigationListItem"><a href="#" class="reservation">予約する</a></li>
+                </ul>
+            </div>
         </div>
-     </div>
+    </div>
     </header>
     <section class="mod-catch">
         <div class="catchCont">
@@ -34,7 +38,6 @@
             </div>
         </div>
     </section>
-
     <section class="mod-about">
         <h2>BOKUNO cafe&hotel<span>ゲストハウス × カフェ × イベントスペース</span></h2>
         <p class="aboutText">旅行客と地域の人々やクリエイターたちが集って<br>そこで何かが生まれて広がって行く<br>僕たちは人を好みます<br>世界の誰もが集い挨拶を交わせる場所<br>国境や性別、年齢、あらゆる壁をこえ、ここには様々な人が集います<br>そんな世界を僕たちは目指しています<br>この場所から新たなコミュニティが生まれ、より多くの人の笑顔が溢れることを願っています<br>今日もあなたの訪問をこころよりお待ちしています。<span>BOKUNOスタッフ一同</span></p>
