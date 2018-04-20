@@ -8,9 +8,9 @@
 }
 @media screen and (max-width:768px) {
 .mod-photos {
-    width: 350px;
+    width: 100%;
     margin: 0 auto;
     /*text-align: center;*/
-    padding: 70px 0;
+    padding: 0 0;
 }
 }

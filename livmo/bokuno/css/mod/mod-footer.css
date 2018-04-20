@@ -71,3 +71,86 @@
 .mod-footer .footerCont .mainCont .twitterLogo:hover {
     opacity: 0.6;
 }
+/* SP */
+@media screen and (max-width:768px) {
+.mod-footer {
+    background-color: #333;
+}
+.mod-footer .footerCont {
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    color: #fff;
+}
+.mod-footer .footerCont .registCont,
+.mod-footer .footerCont .mainCont {
+    display: inline;
+    vertical-align: none;
+    padding: 0;
+}
+.mod-footer .footerCont .registCont {
+    display: none;
+}
+.mod-footer .footerCont .registCont .harryLogo {
+    display: none;
+}
+.mod-footer .footerCont .registCont .regist {
+    color: #fff;
+    font-size: 75%;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.mod-footer .footerCont .mainCont .navigationList {
+    display: inline;
+    vertical-align: middle;
+}
+.mod-footer .footerCont .mainCont .navigationListItem {
+    display: inline;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+}
+.mod-footer .footerCont .mainCont .navigationListItem a {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px solid #fff; 
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.mod-footer .footerCont .mainCont .navigationListItem a:hover {
+    color: #e15854;
+}
+.mod-footer .footerCont .mainCont .storeName {
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 113%;
+    font-weight: bold;
+}
+.mod-footer .footerCont .mainCont .access,
+.mod-footer .footerCont .mainCont .tel {
+    margin-top: 15px;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+.mod-footer .footerCont .mainCont .tel {
+    margin-bottom: 15px;
+}
+.mod-footer .footerCont .mainCont .fbLogo {
+    margin-left: 20px;
+}
+.mod-footer .footerCont .mainCont .fbLogo,
+.mod-footer .footerCont .mainCont .twitterLogo {
+    margin-bottom: 40px;
+    width: 40px;
+}
+.mod-footer .footerCont .mainCont .twitterLogo {
+    margin-left: 15px;
+}
+.mod-footer .footerCont .mainCont .fbLogo:hover,
+.mod-footer .footerCont .mainCont .twitterLogo:hover {
+    opacity: 0.6;
+}
+
+}
