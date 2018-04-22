@@ -2,6 +2,7 @@
 
 .mod-footer {
     background-color: #333;
+    text-align: center;
 }
 .mod-footer .footerCont {
     width: 1000px;
@@ -13,15 +14,7 @@
 .mod-footer .footerCont .mainCont {
     display: table-cell;
     vertical-align: top;
-    padding: 60px 0;
-}
-.mod-footer .footerCont .registCont {
-    width: 250px;
-    text-align: center;
-}
-.mod-footer .footerCont .registCont .harryLogo {
-    width: 200px;
-    margin-bottom: 20px;
+    padding: 40px 0;
 }
 .mod-footer .footerCont .registCont .regist {
     color: #fff;
@@ -29,16 +22,15 @@
     margin-bottom: 5px;
     text-align: left;
 }
-.mod-footer .footerCont .mainCont {
-    padding-left: 40px;
-}
 .mod-footer .footerCont .mainCont .navigationList {
+    font-size: 14px;
+    margin: 0 auto;
     display: table;
     vertical-align: middle;
 }
 .mod-footer .footerCont .mainCont .navigationListItem {
     display: table-cell;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 .mod-footer .footerCont .mainCont .navigationListItem a {
     text-decoration: none;
