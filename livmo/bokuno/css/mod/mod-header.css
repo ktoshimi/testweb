@@ -22,7 +22,7 @@
     position: absolute;
     right: 0;
     top: 50%;
-    margin-top: -0.4em;
+    margin-top: -.9em;
     display: table-cell;
     vertical-align: middle;
     padding-right: 20px;
@@ -38,17 +38,20 @@
     text-decoration: none;
     color: #000;
 }
-.mod-header .navigationListItem.active a {
-    color: #664733;
-}
 .mod-header .navigationListItem a:hover {
-    color: #664733;
+    color: #000;
     font-weight: bold;
 }
-.mod-header .navigationListItem a:active {
-    font-weight: normal;
-    border-bottom: 2px solid #664733;
-    padding-bottom: 8px;
+.mod-header .navigationListItem .reservation {
+	display: table-cell;
+    vertical-align: middle;
+    height: 30px;
+    width: 140px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-radius: 1em;
 }
 
 /* SP */
@@ -89,17 +92,9 @@
     text-decoration: none;
     color: #000;
 }
-.mod-header .navigationListItem.active a {
-    color: #664733;
-}
 .mod-header .navigationListItem a:hover {
-    color: #664733;
+    color: #000;
     font-weight: bold;
-}
-.mod-header .navigationListItem a:active {
-    font-weight: normal;
-    border-bottom: 2px solid #664733;
-    padding-bottom: 8px;
 }
 
 #nav-drawer {
