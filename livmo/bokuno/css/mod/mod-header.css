@@ -81,10 +81,11 @@
     display: block;
     vertical-align: none;
     padding-right: none;
+    margin-top: 15px;
 }
 .mod-header .navigationListItem {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     padding: 15px 0;
     padding-right: 0;
 }
@@ -173,7 +174,7 @@
   left: 0;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 330px;/*最大幅（調整してください）*/
+  max-width: 200px;/*最大幅（調整してください）*/
   height: 100%;
   background: #fff;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
