@@ -139,3 +139,14 @@ width: 100%;
   margin: none;
 }
 }
+
+/*ゲストハウスページ*/
+.mod-about.guesthouse {
+    padding: 100px 0;
+}
+.mod-about.guesthouse .aboutText {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
