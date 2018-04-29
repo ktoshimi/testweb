@@ -73,17 +73,31 @@
     padding-left: 0;
 }
 .mod-header .navigationList {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    margin-top: -0.4em;
-    display: table-cell;
-    vertical-align: middle;
-    padding-right: 20px;
+    text-align: center;
+    position: static;
+    right: none;
+    top: none;
+    margin-top: none;
+    display: block;
+    vertical-align: none;
+    padding-right: none;
 }
 .mod-header .navigationListItem {
-    display: table-cell;
-    padding-right: 40px;
+    display: block;
+    font-size: 20px;
+    padding: 15px 0;
+    padding-right: 0;
+}
+.mod-header .navigationListItem .reservation {
+	display: block;
+	margin: 0 auto;
+    vertical-align: middle;
+    height: 30px;
+    width: 140px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    border-radius: 1em;
 }
 .mod-header .navigationListItem:last-child {
     padding-right: 0;
