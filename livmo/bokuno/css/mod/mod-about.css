@@ -150,3 +150,12 @@ width: 100%;
     line-height: 1.7;
     margin-bottom: 40px;
 }
+
+/*イベントページ*/
+.mod-about .outline .outlineCont .rightCont.event {
+    text-align: center;
+    float: right;
+    width: 49.5vw;
+    margin: 0;
+    line-height: 1.5;
+}
