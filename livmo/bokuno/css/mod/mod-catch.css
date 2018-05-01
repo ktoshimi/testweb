@@ -1,17 +1,26 @@
 @charset "utf-8";
 
 .mod-catch {
-    background-color: #664733;
     margin-top: 50px;
 }
-.mod-catch .catchCont {
-    height: 650px;
+.mod-catch{
+    position: relative;
+    height: 750px;
     margin: 0 auto;
-    background: url(./../../image/header_img.png) no-repeat;
+    background: url(./../../image/mainimage.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: 1400px;
     position: relative;
 }
+.mod-catch .title {
+    width: 850px;
+	position: absolute;
+	top: 50%;
+	margin-top: -230px;
+	left: 50%;
+	margin-left: -425px;
+}
+
 
 /* SP */
 @media screen and (max-width:768px) {
