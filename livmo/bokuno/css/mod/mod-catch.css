@@ -26,13 +26,17 @@
 @media screen and (max-width:768px) {
 .mod-catch {
     background-color: #000;
-    margin-top: 50px;
+    height: 900px;
+    background: url(./../../image/mainpic.png) no-repeat;
+    background-size: 1300px;
+    background-position: 80% 0;
 }
-.mod-catch .catchCont {
-    height: 370px;
-    margin: 0;
-    background: url(./../../image/header_img.png) no-repeat;
-    background-position: 46%;
-    background-size: 800px;
+.mod-catch .title {
+    width: 600px;
+	position: absolute;
+	top: 50%;
+	margin-top: -230px;
+	left: 50%;
+	margin-left: -300px;
 }
 }

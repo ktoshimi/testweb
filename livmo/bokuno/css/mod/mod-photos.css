@@ -13,6 +13,10 @@
     right: 10px;
     left: auto;
 }
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff !important;
+}
 .mod-photos h3 {
     padding-top: 10px;
     font-weight: bold;
