@@ -37,7 +37,7 @@
     color: #fff;
 }
 .mod-footer .footerCont .mainCont .navigationListItem a:hover {
-    color: #e15854;
+    font-weight: bold;
 }
 .mod-footer .footerCont .mainCont .storeName {
     margin-top: 40px;
