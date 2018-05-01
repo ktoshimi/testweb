@@ -159,3 +159,25 @@ width: 100%;
     margin: 0;
     line-height: 1.5;
 }
+/*地図ページ*/
+.mod-about.map .map {
+text-align: center;
+}
+.mod-about.map .message {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 2em;
+    padding-top: 10px;
+    vertical-align: middle;
+    height: 30px;
+    width: 140px;
+    border: 1px solid #000;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 20px;
+}
+.mod-about.map .message:hover {
+background-color: #000;
+color: #fff;
+}
