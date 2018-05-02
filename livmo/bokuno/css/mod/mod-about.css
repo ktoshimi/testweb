@@ -32,7 +32,7 @@
     text-align: center;
     float: right;
     width: 46vw;
-    margin: 0 2vw 0 2vw;
+    margin: 30px 2vw 0 2vw;
     line-height: 1.5;
 }
 .mod-about .outline .outlineCont .rightCont h3 {
@@ -89,10 +89,10 @@
     padding: 0;
 }
 .mod-about .outline .outlineCont {
-margin: 0;
-width: 100%;
-  overflow: hidden;
-  padding-bottom: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 0;
 }
 .mod-about .outline .outlineCont .rightCont ul {
     width: 90vw;
@@ -140,25 +140,80 @@ width: 100%;
 }
 }
 
-/*ゲストハウスページ*/
-.mod-about.guesthouse {
-    padding: 100px 0;
+/*下位全体設定*/
+.mod-about.bottompage {
+    padding: 100px 0; 
 }
-.mod-about.guesthouse .aboutText {
+.mod-about.bottompage h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.mod-about.bottompage h2 span{
+    display: block;
+    font-size: 18px;
+}
+.mod-about.bottompage .aboutText {
     text-align: center;
     font-size: 20px;
     line-height: 1.7;
     margin-bottom: 40px;
 }
 
+/*ゲストハウスページ*/
+
 /*イベントページ*/
-.mod-about .outline .outlineCont .rightCont.event {
+.mod-about.bottompage .rightCont {
     text-align: center;
-    float: right;
-    width: 49.5vw;
-    margin: 0;
+    margin: 30px 0;
     line-height: 1.5;
 }
+.mod-about.bottompage .image02box,
+.mod-about.bottompage .imageTx02box {
+    overflow: hidden;
+}
+.mod-about.bottompage .image02box img ,
+.mod-about.bottompage .imageTx02box img, 
+.mod-about.bottompage .imageTx02box .rightCont {
+	float: left;
+	width: 50vw;
+}
+.mod-about.bottompage .imageTx02box ul {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.mod-about.bottompage .imageTx02box li {
+    font-size: 15px;
+}
+.mod-about.bottompage .imageTx02box h3 {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.mod-about.bottompage .imageTx02box .more{
+padding: 10px 20px;
+    border-radius: 2em;
+        vertical-align: middle;
+	    height: 35px;
+	        width: 140px;
+		    border: 1px solid #000;
+		        text-decoration: none;
+			    color: #000;
+		    }
+.mod-about.bottompage .imageTx02box .more:hover {
+    background-color: #000;
+    color: #fff;
+}
+.mod-about.bottompage .imageTx02box .button {
+    padding-top: 10px;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
 /*地図ページ*/
 .mod-about.map .map {
 text-align: center;
