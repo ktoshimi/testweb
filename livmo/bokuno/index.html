@@ -109,12 +109,8 @@
                <div class="swiper-button-next"></div>
            </div>
 </section>
-<!--これ別のやつ-->
-<ul>
-<a href="./php/insta.php">foo</a>
-</ul>
-<!--ここから新しいやつ(｡･ω･｡)-->
-<ul id=”instafeed”></ul>
+<!--Instagram-->
+<ul id="instafeed"></ul>
 <footer class="mod-footer">
         <div class="footerCont">
             <div class="mainCont">
@@ -149,43 +145,24 @@
 					    });
 				    });
 	</script>
-	
-  <p>Instagtam API 0084</p>
-  <ul class="instagram"></ul>
   <script src="https://code.jquery.com/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/instagram.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/Instafeed.js"></script>
-  <ul id="instafeed">ああ</ul>
   <script>
-//  $(function() {
-//var userFeed = new Instafeed({
-//target: ‘#instafeed’, // 表示させる要素の ID
-//get: ‘user’,
-//userId: ‘195935951’, // ユーザ ID
-//sortBy: ‘most-recent’,
-//links: true,
-//limit: 12, // 表示数
-//resolution: ‘low_resolution’,
-//template: ‘<li><a target=”_blank” href=”{{link}}” style=”background-image:url({{image}});”></a></li>,
-//accessToken: ‘195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7’ // アクセストークン
-//});
-//userFeed.run();
-//});
-$(document).ready(function() {
-var userFeed = new Instafeed({
-    target: '#instafeed',
+  $(document).ready(function() {
+  var userFeed = new Instafeed({
+    target: 'instafeed',
     get: 'user', //ユーザーから取得
     userId: '195935951', //ユーザーID(先ほど確認した'user_id')
     sortBy: 'most-recent',//最新記事から順に取得
     links: true , //画像リンク取得
-    limit: 3, //取得する画像数を設定
+    limit: 10, //取得する画像数を設定
     resolution: 'low_resolution', //画像サイズを設定
     template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}"></a></li>',
     accessToken: '195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7' //アクセストークン
     });
     userFeed.run();
-});
-</script>
+  });
+  </script>
 
 </body>
