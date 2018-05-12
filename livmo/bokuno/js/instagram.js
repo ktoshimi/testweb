@@ -3,8 +3,8 @@ $(function(){
     var html = "";
 
     $.ajax({
-	url: "../php/instagram.php",//PHPファイルURL
         type:"POST",
+        url: "../php/instagram.php",//PHPファイルURL
         dataType: "json"
     }).done(function(data){
         //通信成功時の処理
