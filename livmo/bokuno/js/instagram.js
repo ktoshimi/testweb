@@ -3,7 +3,7 @@ $(function(){
     var html = "";
 
     $.ajax({
-        type:"POST",
+        type:"GET",
         url: "../php/instagram.php",//PHPファイルURL
         dataType: "json"
     }).done(function(data){
