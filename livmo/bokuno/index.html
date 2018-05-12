@@ -11,24 +11,6 @@
     <link rel="stylesheet" type="text/css" href="./js/naver/jquery.fs.naver.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-  <script type="text/javascript" src="./js/Instafeed.js"></script>
-  <script>
-$(function() {
-var userFeed = new Instafeed({
-target: ‘instafeed’, // 表示させる要素の ID
-get: ‘user’,
-userId: ‘195935951’, // ユーザ ID
-sortBy: ‘most-recent’,
-links: true,
-limit: 12, // 表示数
-resolution: ‘low_resolution’,
-template: ‘<li><a target=”_blank” href=”{{link}}” style=”background-image:url({{image}});”></a></li>,
-accessToken: ‘195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7’ // アクセストークン
-});
-userFeed.run();
-});
-</script>
-
 
 </head>
 
@@ -127,27 +109,9 @@ userFeed.run();
                <div class="swiper-button-next"></div>
            </div>
 </section>
+<!--これ別のやつ-->
 <ul>
-<?php echo "タイトルだよ〜"; ?>
-<?php
-    $user_id = '195935951'; //ユーザーID
-    $access_token = '195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7'; //自分のアクセストークン
-    $count = '6'; //表示したい数
-    $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
-    $array = json_decode(file_get_contents($url), true);
-    //echo var_dump($array);
-
-    foreach($array['data'] as $data){
-        $img = $data['images']['thumbnail'];
-    ?>
-    <li>
-        <a href="<?php echo $data['link'] ?>" target="_blank">
-            <img src="<?php echo $img['url']; ?>" alt="">
-        </a>
-    </li>
-    <?php
-    }
-    ?>
+<a href="./php/insta.php">foo</a>
 </ul>
 <!--ここから新しいやつ(｡･ω･｡)-->
 <ul id=”instafeed”></ul>
@@ -191,4 +155,22 @@ userFeed.run();
   <script src="https://code.jquery.com/jquery.min.js"></script>
   <script type="text/javascript" src="./js/instagram.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/instafeed.js"></script>
+  <script>
+  $(function() {
+var userFeed = new Instafeed({
+target: ‘instafeed’, // 表示させる要素の ID
+get: ‘user’,
+userId: ‘195935951’, // ユーザ ID
+sortBy: ‘most-recent’,
+links: true,
+limit: 12, // 表示数
+resolution: ‘low_resolution’,
+template: ‘<li><a target=”_blank” href=”{{link}}” style=”background-image:url({{image}});”></a></li>,
+accessToken: ‘195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7’ // アクセストークン
+});
+userFeed.run();
+});
+</script>
+
 </body>
