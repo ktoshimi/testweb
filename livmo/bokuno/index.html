@@ -156,10 +156,11 @@
   <script type="text/javascript" src="./js/instagram.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/instafeed.js"></script>
+  <ul id="instafeed"></ul>
   <script>
   $(function() {
 var userFeed = new Instafeed({
-target: ‘instafeed’, // 表示させる要素の ID
+target: ‘#instafeed’, // 表示させる要素の ID
 get: ‘user’,
 userId: ‘195935951’, // ユーザ ID
 sortBy: ‘most-recent’,
