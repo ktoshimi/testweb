@@ -3,7 +3,7 @@ $(function(){
     var html = "";
 
     $.ajax({
-        url: "php/instagram.php",//PHPファイルURL
+	url: "https://ktoshimi.github.io/testweb/livmo/bokuno/php/instagram.php",//PHPファイルURL
         type:"POST",
         dataType: "json"
     }).done(function(data){
