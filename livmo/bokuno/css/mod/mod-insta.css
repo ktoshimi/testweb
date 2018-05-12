@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.mod-insta {
+    margin-bottom: 100px;
+}
+.mod-insta h3 {
+  padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}  
+.mod-insta ul{
+  /* flexboxで等間隔に並べる*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+ 
+.mod-insta li{
+  /* 枠線をつけて1列に5つ並べる */
+  box-sizing: border-box;
+  border: solid 1px #fff;
+  width: 20vw;
+  /* 正方形にするのに必要な部分 */
+  height: auto;
+  position: relative;
+}
+@media screen and (max-width: 768px){
+.mod-insta li{
+  width: 50vw;
+}
+}
+
+ 
+.mod-insta li:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* ここを100％にすることで正方形になる */
+}
+ 
+.mod-insta li span{
+  /* 正方形にするのに必要な部分 */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 中央寄せ */
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  overflow: hidden;
+}
+ 
+/* 高さの中央揃えに必要な部分 */
+.mod-insta li span:before{
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+  width: 0px;
+  display: inline-block;
+}
+ 
+.mod-insta li span > *{
+  vertical-align: middle;
+  display: inline-block;
+}
+ 
+.mod-insta li span img{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}

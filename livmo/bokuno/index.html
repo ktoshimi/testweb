@@ -11,14 +11,10 @@
     <link rel="stylesheet" type="text/css" href="./js/naver/jquery.fs.naver.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-
 </head>
 
 <body>
 <div class="wrap">
-<?php
-  phpinfo();
-?>
 <header class="mod-header">
       <div class="nuv">
         <a href="index.html" class="logowrap"><img src="./image/headlogo.png" class="headerLogo" alt="BOKUNO Cafe & Hotel"></a>
@@ -44,7 +40,7 @@
 
 <section class="mod-about">
         <h2>BOKUNO cafe&hotel<span>HOSTEL × CAFE × EVENT SPACE</span></h2>
-        <p class="aboutText">旅行客と地域の人々やクリエイターたちが集って<br>そこで何かが生まれて広がって行く<br>僕たちは人を好みます<br>世界の誰もが集い挨拶を交わせる場所<br>国境や性別、年齢、あらゆる壁をこえ、ここには様々な人が集います<br>そんな世界を僕たちは目指しています<br>この場所から新たなコミュニティが生まれ、より多くの人の笑顔が溢れることを願っています<br>今日もあなたの訪問をこころよりお待ちしています。</p>
+        <p class="aboutText">世界の誰もが集い挨拶を交わせる場所<br>国境や性別、年齢、あらゆる壁をこえ、ここには様々な人が集います<br>そんな世界を僕たちは目指しています<br>この場所から新たなコミュニティが生まれ、より多くの人の笑顔が溢れる<br>今日もあなたの訪問をこころよりお待ちしています。</p>
         <div class="outline">
             <div class="outlineCont">
                 <img src="./image/image01.png" alt="GUEST HOUSE">
@@ -85,6 +81,11 @@
             </div>            
         </div>
 </section>
+<section class="mod-insta">
+<h3>BOKUNO INSTAGRAM FEED</h3>
+<!--Instagram-->
+<ul id="instafeed"></ul>
+</section>
 <section class="mod-photos">
        <h3>BOKUNO Photos</h3>
            <!-- Slider main container -->
@@ -109,8 +110,6 @@
                <div class="swiper-button-next"></div>
            </div>
 </section>
-<!--Instagram-->
-<ul id="instafeed"></ul>
 <footer class="mod-footer">
         <div class="footerCont">
             <div class="mainCont">
@@ -158,7 +157,7 @@
     links: true , //画像リンク取得
     limit: 10, //取得する画像数を設定
     resolution: 'low_resolution', //画像サイズを設定
-    template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}"></a></li>',
+    template: '<li><span><a href="{{link}}" target="_blank"><img src="{{image}}"></a></span></li>',
     accessToken: '195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7' //アクセストークン
     });
     userFeed.run();
