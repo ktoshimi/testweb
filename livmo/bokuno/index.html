@@ -10,13 +10,12 @@
     <link href="./css/layout.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="./js/naver/jquery.fs.naver.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="wrap">
 <header class="mod-header">
-      <div class="nuv">
+<!--      <div class="nuv">
         <a href="index.html" class="logowrap"><img src="./image/headlogo.png" class="headerLogo" alt="BOKUNO Cafe & Hotel"></a>
             <div id="nav-drawer">
                 <input id="nav-input" type="checkbox" class="nav-unshown">
@@ -32,7 +31,7 @@
                         </ul>
                     </div>
             </div>
-        </div>
+        </div>-->
 	</header>
 <section class="mod-catch">
         <img src="./image/titlelogo.png" class="title" alt="BOKUNO Cafe & Hotel">
@@ -129,13 +128,22 @@
 </footer>
 
 <div class="mod-copyright">
-        <p class="copyrightText">Copyright bokuno.inc. All Rights Reserved.</p>
+    <p class="copyrightText">Copyright bokuno.inc. All Rights Reserved.</p>
 </div>
-</div>
+    <!--header-->
+    <script type="text/javascript">
+        $(function(){
+        $.ajaxSetup({cache:false});
+        $("header").load("./header.html");
+        });
+    </script>
+    <script type="text/javascript" src="./js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <!--slide-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/swiper_main.js"></script>
-    <script type="text/javascript" src="./js/jquery/jquery-3.3.1.min.js"></script>
+    <!--headerslide-->
     <script type="text/javascript" src="./js/jquery.bgswitcher.js"></script>
     <script>
 	    jQuery(function($) {
@@ -144,24 +152,23 @@
 					    });
 				    });
 	</script>
-  <script src="https://code.jquery.com/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/Instafeed.js"></script>
-  <script>
-  $(document).ready(function() {
-  var userFeed = new Instafeed({
-    target: 'instafeed',
-    get: 'user', //ユーザーから取得
-    userId: '195935951', //ユーザーID(先ほど確認した'user_id')
-    sortBy: 'most-recent',//最新記事から順に取得
-    links: true , //画像リンク取得
-    limit: 10, //取得する画像数を設定
-    resolution: 'low_resolution', //画像サイズを設定
-    template: '<li><span><a href="{{link}}" target="_blank"><img src="{{image}}"></a></span></li>',
-    accessToken: '195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7' //アクセストークン
-    });
-    userFeed.run();
-  });
-  </script>
-
+	<!--instagram/Ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/Instafeed.js"></script>
+    <script>
+        $(document).ready(function() {
+        var userFeed = new Instafeed({
+            target: 'instafeed',
+            get: 'user', //ユーザーから取得
+            userId: '195935951', //ユーザーID(先ほど確認した'user_id')
+            sortBy: 'most-recent',//最新記事から順に取得
+            links: true , //画像リンク取得
+            limit: 10, //取得する画像数を設定
+            resolution: 'low_resolution', //画像サイズを設定
+            template: '<li><span><a href="{{link}}" target="_blank"><img src="{{image}}"></a></span></li>',
+            accessToken: '195935951.6cda97c.fd05fcab3a284895a578691440f0dbe7' //アクセストークン
+        });
+            userFeed.run();
+        });
+    </script>
 </body>
